@@ -4,7 +4,8 @@ const instancia = require('../../database/conexao');
 const colunas = {
     nome: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     regiao:{
         type: Sequelize.STRING,

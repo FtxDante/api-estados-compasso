@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const config = require('config');
-const roteador = require('./routes/estados/verbosEstados');
+const roteador = require('./routes/estados/verbos-estados');
 
 app.use(express.json());
 

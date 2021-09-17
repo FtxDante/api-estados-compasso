@@ -1,4 +1,4 @@
-const ModeloTabela = require('../routes/estados/ModeloTabelaEstados');
+const ModeloTabela = require('../routes/estados/modelo-tabela-estados');
 
 ModeloTabela
     .sync()
