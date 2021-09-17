@@ -9,7 +9,7 @@ module.exports = {
     
     },
     //Foi tratado, se não achar o item por id ele lança um erro.
-    async procurar(id){
+    async procurarPorId(id){
         const encontrado = await ModeloTabelaEstados.findOne({where:{id: id}})
         // Se não achar por ID, ele retorna NULL que em Boolean Significa FALSE.
         if(!encontrado){
