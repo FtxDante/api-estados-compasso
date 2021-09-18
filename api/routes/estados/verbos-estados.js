@@ -7,7 +7,7 @@ roteador.post('/', async (req, res) =>{
         const dados = req.body;
         const estados = new Estados(dados);
         await estados.criar();
-        res.send(JSON.stringify(estados))
+        res.status(201).send(JSON.stringify(estados))
     }catch(erro){
         res.status(404).send(JSON.stringify(erro.message))
     }
@@ -26,11 +26,11 @@ roteador.get('/:id',async (req,res)=>{
         const id = req.params.id;
         const estados = new Estados({id: id});
         await estados.carregar();
-        res.send(
+        res.status(200).send(
             JSON.stringify(estados)
         )
     }catch(erro){
-        res.send(
+        res.status(404).send(
             JSON.stringify({mensagem: erro.message})
         )
     }
@@ -41,10 +41,10 @@ roteador.put('/:id',async (req,res) =>{
         const id = req.params.id;
         const dados = req.body;
         const estados = new Estados({...dados,id: id});
-        await estados.atualiza();
-        res.end();
+        const dadosAtualizados = await estados.atualizar();
+        res.status(200).send(JSON.stringify({"Dados Atualizados": dadosAtualizados}));
     }catch(erro){
-        res.send(
+        res.status(404).send(
             JSON.stringify({mensagem: erro.message})
         )
     }

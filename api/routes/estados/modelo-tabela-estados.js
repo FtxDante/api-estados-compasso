@@ -20,7 +20,7 @@ const colunas = {
         allowNull: false
     },
     area:{
-        type: Sequelize.FLOAT,
+        type: Sequelize.DOUBLE,
         allowNull: false
     }
 }
