@@ -20,7 +20,7 @@ Avaliação de fim de Sprint da **Compasso-UOL** ​​ : criar uma API para arm
 #### :rotating_light: Importante! :rotating_light:
 
 * **Banco de dados vazio: **Depois de terminar essas configurações o banco de dados já deve estar pronto para ser utilizado, mas iniciará **vazio** e você terá que criar estado por estado.
-* **Dump de estados**: Você pode pular a parte 2 da configuração e usar um **dump** que está salvo aqui [dump-de-estados.dump](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/bd-estados_estados.sql).
-* **Insert de estado**: Se já passou pela configuração e não quer ter que apagar nada, você pode inserir os dados na tabela com o arquivo de texto com os comandos de [insert-into.txt](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/insert-estados.txt)
+* **Dump de estados**: Você pode pular a parte 2 e 3 da configuração e usar um **dump** que está salvo aqui [dump estados](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/bd-estados_estados.sql).
+* **Insert de estado**: Se já passou pela configuração e não quer ter que apagar nada, você pode inserir os dados na tabela com o arquivo de texto com os comandos de [INSERT INTO](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/insert-estados.txt)
 
-* **Sobre os dados inseridos:** Os dados de área e população correspondem ao o ano de 2000 e já estão desatualizados, você pode corrigir se quiser!
+* ⚠️ **SOBRE O INSERT e o DUMP ACIMA:** Os dados de área e população correspondem ao o ano de 2000 e já estão desatualizados, você pode corrigir se quiser!
