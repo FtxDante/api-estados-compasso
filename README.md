@@ -25,6 +25,8 @@ Avaliação de fim de Sprint da **Compasso-UOL** ​​ : criar uma API para arm
 
 5. **Como criar a tabela de estados**: execute o arquivo `criarTabela.js`, ele irá criar a tabela conforme foi predefinido.
    1. O comando para isso é `node api/database/criarTabela`
+6. **Inicie o servidor** 
+   1. O comando é `npm start`.
 
    ### Usando PostMan:
 
