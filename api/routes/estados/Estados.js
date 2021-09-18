@@ -43,7 +43,6 @@ class Estados{
         campos.forEach((campo)=>{
             const valor = this[campo];
             if((typeof valor == 'string' || typeof valor == 'number') && valor.length > 0){
-                console.log(valor)
                 dadosParaAtualizar[campo] = valor;
             }
         })
