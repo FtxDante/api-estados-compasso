@@ -1,5 +1,6 @@
 const MetodosEstados = require("./metodos-estados");
-const DadosNaoFornecidos = require('../../error/DadosNaoFornecidos')
+const DadosNaoFornecidos = require('../../error/DadosNaoFornecidos');
+const CampoInvalido = require("../../error/CampoInvalido");
 
 class Estados{
     constructor({id, nome, regiao, populacao,capital, area}){
@@ -9,10 +10,6 @@ class Estados{
         this.populacao = populacao;
         this.capital = capital;
         this.area = area;
-    }
-    //Não precisa tratar
-    async lista(){
-       return await MetodosEstados.listar();
     }
     //Foi tratado, se não inserido um valor necessário ele lança um erro.
     async criar(){
@@ -71,7 +68,7 @@ class Estados{
             const valor = this[campo];
             // Lança um erro se não for uma string ou numero, se a quantidade de caracteres for 0, ou se o valor for 0;
             if((typeof valor != 'string' && typeof valor != 'number') || valor.length === 0 ||valor === 0){
-                throw new Error(`Campo ${campo} inválido`)
+                throw new CampoInvalido(campo)
             }
         })
     }

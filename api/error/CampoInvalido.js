@@ -1,4 +1,4 @@
-class CampoInvalido{
+class CampoInvalido extends Error{
     constructor(campo){
         const mensagem = `O campo [${campo}] é inválido` 
         super(mensagem)

@@ -1,10 +1,17 @@
 const ModeloTabelaEstados = require('./modelo-tabela-estados');
 
 module.exports = {
-    listar(){
-        return ModeloTabelaEstados.findAll({raw: true});
+    async listar(){
+        const resultado = await ModeloTabelaEstados.findAll({raw: true});
+        if(Array.isArray(resultado) && resultado.length > 1){
+            console.log('1', resultado)
+            return resultado
+        }else{
+            console.log('2', resultado)
+            return resultado[0]
+        }
     },
-    async inserir(estado){
+    inserir(estado){
         return ModeloTabelaEstados.create(estado);
     
     },
