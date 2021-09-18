@@ -21,7 +21,7 @@ Avaliação de fim de Sprint da **Compasso-UOL** ​​ : criar uma API para arm
 
       ![image-20210918112023850](https://github.com/FtxDante/api-estados-compasso/blob/master/imagens-para-repositorio/Screenshot_1.png)
 
-4. **Crie um banco de dados manualmente**, com o nome `bd-estados`, para isso vá até o WorkBench e digite  `` CREATE DATABASE `db-estados` ``
+4. **Crie um banco de dados manualmente**, com o nome `bd-estados`, para isso vá até o WorkBench e digite  `` CREATE DATABASE `bd-estados` ``
 
 5. **Como criar a tabela de estados**: execute o arquivo `criarTabela.js`, ele irá criar a tabela conforme foi predefinido.
    1. O comando para isso é `node api/database/criarTabela`
