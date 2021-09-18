@@ -2,7 +2,7 @@
     "mysql":{
         "banco-de-dados":"bd-estados",
         "usuario":"root",
-        "senha":"09566037341",
+        "senha":"sua-senha",
         "host":"127.0.0.1"
     },
     "api":{
