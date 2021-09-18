@@ -21,10 +21,20 @@ Avaliação de fim de Sprint da **Compasso-UOL** ​​ : criar uma API para arm
 
       ![image-20210918112023850](https://github.com/FtxDante/api-estados-compasso/blob/master/imagens-para-repositorio/Screenshot_1.png)
 
-4. **Crie um banco de dados manualmente**, com o nome `bd-estados`, para isso vá até o WorkBench e digite  `` CREATE DATABASE `db-estados` ``
+4. **Crie um banco de dados manualmente**, com o nome `bd-estados`, para isso vá até o WorkBench e digite  `` CREATE DATABASE `bd-estados` ``
 
 5. **Como criar a tabela de estados**: execute o arquivo `criarTabela.js`, ele irá criar a tabela conforme foi predefinido.
    1. O comando para isso é `node api/database/criarTabela`
+6. **Inicie o servidor** 
+   1. O comando é `npm start`.
+
+### :rotating_light: Importante! :rotating_light:
+
+* 🕵️‍♀️ **Banco de dados vazio:** Depois de terminar essas configurações o banco de dados já deve estar pronto para ser utilizado, mas iniciará **vazio** e você terá que criar estado por estado.
+* **Banco de dados populado**:
+  * **DUMP: ** Você pode **pular** a parte 4 e 5 da configuração e usar um **dump** que está salvo aqui [dump estados](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/bd-estados_estados.sql).
+  * **Insert de estado**: Se já passou pela configuração e não quer usar o dump, você pode inserir os dados na tabela com o arquivo de texto com os comandos de INSERT INTO salvos no [ARQUIVO](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/insert-estados.txt).
+  * ⚠️ **SOBRE O INSERT e o DUMP ACIMA:** Os dados de área e população correspondem ao o ano de 2000 e já estão desatualizados, você pode corrigir se quiser!
 
    ### Usando PostMan:
 
@@ -34,10 +44,3 @@ Avaliação de fim de Sprint da **Compasso-UOL** ​​ : criar uma API para arm
    2. Todas essas requisições deve ser feitas na URL `localhost:3000/api/estados`.
       1. O **3000* representa a porta que você passou no **default.json**
 
-#### :rotating_light: Importante! :rotating_light:
-
-* 🕵️‍♀️ **Banco de dados vazio:** Depois de terminar essas configurações o banco de dados já deve estar pronto para ser utilizado, mas iniciará **vazio** e você terá que criar estado por estado.
-* **BANCO DE DADOS PRONTO**:
-  * **DUMP: ** Você pode **pular** a parte 4 e 5 da configuração e usar um **dump** que está salvo aqui [dump estados](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/bd-estados_estados.sql).
-  * **Insert de estado**: Se já passou pela configuração e não quer usar o dump, você pode inserir os dados na tabela com o arquivo de texto com os comandos de [INSERT INTO](https://github.com/FtxDante/estados-com-populacao-e-area/blob/main/insert-estados.txt).
-  * ⚠️ **SOBRE O INSERT e o DUMP ACIMA:** Os dados de área e população correspondem ao o ano de 2000 e já estão desatualizados, você pode corrigir se quiser!
